@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap");
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --clr-black: hsl(0, 0%, 7%);
+  --clr-grey: hsl(0, 0%, 50%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-yellow: hsl(47, 88%, 63%);
+
+  /* FONTS */
+  --ff-figtree: "Figtree", sans-serif;
+}
+
+/* || RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+/* || UTILITIES */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* || GENERAL STYLES */
+body {
+  align-items: center;
+  background-color: var(--clr-yellow);
+  display: flex;
+  font-family: var(--ff-figtree);
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: var(--clr-white);
+  border-radius: 1em;
+  border: 0.01em solid var(--clr-black);
+  box-shadow: 0.5em 0.5em var(--clr-black);
+  margin-inline: 0em;
+  max-width: 21rem;
+  padding: 1.2em;
+}
+
+.card__img {
+  border-radius: 1em;
+}
+
+.card__h2 {
+  background-color: var(--clr-yellow);
+  border-radius: 0.4em;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin: 1.2em 0;
+  padding: 0.5em;
+}
+
+.card__h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.card__h1 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 0.8em 0;
+}
+
+.card__p {
+  color: var(--clr-grey);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card__div {
+  align-items: center;
+  column-gap: 10px;
+  display: flex;
+  margin: 1em 0;
+}
+.card__div img {
+  width: 2.5rem;
+}
+
+.card__div h3 {
+  color: var(--clr-black);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.card__h1:hover {
+  color: var(--clr-yellow);
+  cursor: pointer;
+}
